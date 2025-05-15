@@ -1,6 +1,6 @@
 function extract --description "Extract file"
     set -l options 'o/output=' 'h/help'
-    argparse -n extract $options -- $argv
+    argparse $options -- $argv
 
     # Check if we're in a Chinese environment
     set -l is_chinese_env 0
